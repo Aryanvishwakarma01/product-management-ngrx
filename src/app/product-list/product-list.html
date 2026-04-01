@@ -1,0 +1,22 @@
+<section class="cards-container">
+  @for(product of products$ | async; track product.id; let i = $index){
+  <div class="card">
+    
+    <div class="card-header">
+      <!-- <span class="product-id">#{{ i + 1 }}</span> -->
+      <span class="product-id">{{ product.id}}</span>
+      <span class="price">₹{{product.price}}</span>
+    </div>
+
+    <div class="card-body">
+      <h4>{{product.title}}</h4>
+    </div>
+
+    <div class="card-actions">
+      <button class="edit-btn" >Edit</button>
+      <button class="delete-btn" (click)="deleteProduct(product.id)">Delete</button>
+    </div>
+
+  </div>
+}
+</section>

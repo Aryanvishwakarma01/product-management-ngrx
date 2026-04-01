@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1f2937; /* dark professional */
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Links container */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Buttons */
+.nav-links a {
+  text-decoration: none;
+  color: #e5e7eb;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  background-color: #374151;
+  color: #ffffff;
+}
+
+/* Active route */
+.active {
+  background-color: #2563eb;
+  color: white;
+}

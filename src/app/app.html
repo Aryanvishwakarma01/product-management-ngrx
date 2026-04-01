@@ -1,11 +1,16 @@
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+
+
+<!-- 
 <div class="container">
   <h3>Product Form</h3>
-  <form [formGroup]="productForm" (ngSubmit)="formHandler()">
+  <form [formGroup]="productForm" (ngSubmit)="formHandler()"> -->
     <!-- <div>
       <label>Product Id: </label>
       <input type="text" formControlName="id">
     </div> -->
-    <div>
+    <!-- <div>
       <label>Product Title</label>
       <input type="text" formControlName="title">
     </div>
@@ -16,15 +21,16 @@
 
     <button type="submit">Add Product</button>
   </form>
-</div>
+</div> -->
 
 
-<section class="cards-container">
+<!-- <section class="cards-container">
   @for(product of products$ | async; track product.id; let i = $index){
   <div class="card">
     
-    <div class="card-header">
-      <span class="product-id">#{{ i + 1 }}</span>
+    <div class="card-header"> -->
+      <!-- <span class="product-id">#{{ i + 1 }}</span> -->
+      <!-- <span class="product-id">{{ product.id}}</span>
       <span class="price">₹{{product.price}}</span>
     </div>
 
@@ -39,4 +45,7 @@
 
   </div>
 }
-</section>
+</section> -->
+
+<!-- <app-product-list></app-product-list> -->
+ <!-- <app-product-form></app-product-form> -->

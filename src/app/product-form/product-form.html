@@ -1,0 +1,19 @@
+<div class="container">
+  <h3>Product Form</h3>
+  <form [formGroup]="productForm" (ngSubmit)="formHandler()">
+    <!-- <div>
+      <label>Product Id: </label>
+      <input type="text" formControlName="id">
+    </div> -->
+    <div>
+      <label>Product Title</label>
+      <input type="text" formControlName="title">
+    </div>
+    <div>
+      <label>Product Price: </label>
+      <input type="number" formControlName="price">
+    </div>
+
+    <button type="submit">Add Product</button>
+  </form>
+</div>
