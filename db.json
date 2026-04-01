@@ -1,0 +1,15 @@
+{
+  "products": [
+    {
+      "id": "VYGVj-Cr82U",
+      "title": "Apple 12",
+      "price": 60000
+    },
+    {
+      "id": "QNIDOSAFg_s",
+      "title": "banana",
+      "price": 100
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
